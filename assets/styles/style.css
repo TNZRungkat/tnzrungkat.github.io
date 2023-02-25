@@ -225,12 +225,24 @@ article .my-ability{
     width: 60%;
 }
 
-.js, .datbase, .java, .kotlin, .matlab{
+.java, .kotlin, .matlab{
     width: 30%;
 }
 
-.python{
-    width: 50%;
+.datbase, .bootstrap{
+    width: 55%;
+}
+
+.python, .js, .flask{
+    width: 65%;
+}
+
+.expressjs, .djanggo{
+    width: 15%;
+}
+
+.reactjs, .vuejs{
+    width: 35%;
 }
 
 .card{
