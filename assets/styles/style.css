@@ -217,8 +217,12 @@ article .my-ability{
     border-radius: 5px;
 }
 
-.markup, .bahprom-c, .figma, .creativity{
+.markup, .figma, .creativity{
     width: 70%;
+}
+
+.bahprom-c{
+    width: 50%;
 }
 
 .cascading, .exp{
