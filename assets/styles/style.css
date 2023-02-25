@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: -webkit-linear-gradient(#f1f1f1, #ddd);
+}
+
+
+/* --- Header --- */
+
+header{
+    display: inline;
+}
+
+nav{
+    display: inline;
+}
+
+nav .nav-atas{
+    background:radial-gradient(circle at top left, #9ED2C6,#54BAB9);
+    position: relative;
+    z-index: 2;
+}
+
+nav img{
+    width: 60px;
+    display: block;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nav-bawah{
+    background:radial-gradient(circle at top left, #9ED2C6,#54BAB9);
+    padding: 10px;
+    box-shadow: 0px -7px 15px black;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight:600;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.nav-opsi{
+    padding: 10px 0 5px 0;
+    width: 500px;
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-opsi li{
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 0.1px solid #1F4690;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    text-shadow: 1px 1px 1px white;
+    color: #ffffff;
+}
+
+.dropdown-nav{
+    display: none;
+}
+
+
+/* ---- Main --- */
+main{
+    margin: -20px auto 0 auto;
+    max-width: 80%;
+}
+
+/* Introduce */
+.profile{
+    text-align: center;
+    background: url(../images/bg\ 2.webp);
+    padding: 30px 0;
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    border-radius: 20px;
+}
+
+.introduce img{
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px #231955;
+    position: relative;
+}
+
+.medsos{
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+}
+
+.medsos a{
+    display: flex;
+    flex-grow: 1;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+
+.medsos img, .clossing-info img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30px;
+    border-radius: 100%;
+}
+
+.medsos img:hover{
+    box-shadow: 1px 1px 10px gold;
+}
+
+h1, p{
+    color: #231955;
+}
+h1{
+    margin-top: 10px;
+}
+
+
+/*  Skills / Ability  */
+article{
+    margin-top: 5em;
+}
+
+article .skills{
+    display: flex;
+    flex-grow: 1;
+}
+
+article .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+h2, h3{
+    text-align: center;
+    color: #231955;
+}
+
+h5{
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+article .my-ability{
+    max-height: 360;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 10px;
+    background: radial-gradient(circle at top left, #F7ECDE,#E9DAC1,#9ED2C6,#54BAB9);
+    flex: 33.3%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.skills img{
+    border-radius: 5px;
+    max-width: 100%;
+    max-height:55%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.skills p{
+    text-align: center;
+    color: #231955;
+}
+
+.tools{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tools p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.percentage-bar{
+    display: flex;
+    background-color: white;
+    height: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.percentage{
+    height: 100%;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.markup, .bahprom-c, .figma, .creativity{
+    width: 70%;
+}
+
+.cascading, .exp{
+    width: 60%;
+}
+
+.js, .datbase, .java, .kotlin, .matlab{
+    width: 30%;
+}
+
+.python{
+    width: 50%;
+}
+
+.card{
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+}
+
+/* Achievement */
+.achievements{
+    padding: 20px;
+    border-radius: 5px;
+    background: radial-gradient(circle at top left, #F7ECDE,#E9DAC1,#9ED2C6,#9ED2C6,#54BAB9);
+}
+
+.showAchieve{
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.doc{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.doc img{
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.btn-prev, .btn-next{
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 47%;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.6s ease;
+}
+
+.btn-next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.btn-next:hover, .btn-prev:hover{
+    color: #54BAB9;
+    background-color: #F7ECDE;
+}
+
+.caption{
+    color: #231955;
+    font-weight: bold;
+    bottom: 12px;
+}
+
+.dot-btn{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin:0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #54BAB9;
+}
+
+.animate{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* About Me - Clossing */
+aside{
+    display: flex;
+}
+
+aside h1{
+    text-align: center;
+}
+
+.clossing-content{
+    margin-bottom: 5em;
+    display: flex;
+}
+
+.clossing-img, .about-me{
+    padding: 20px;
+    background: url(../images/bg\ 2.webp);
+    border-radius: 15px;
+    margin: 10px;
+    color: #231955;
+}
+
+.clossing-img{
+    margin: auto 0;
+    display: flex;
+    flex-grow: 1;
+    flex: 30%;
+    border-radius: 100%;
+}
+
+.clossing-img img{
+    flex-grow: 1;
+    max-width: 100%;
+    object-fit: fill;
+    object-position:center;
+    border-radius: 100%;
+}
+
+.about-me{
+    flex: 70%;
+}
+
+.about-me p{
+    flex-grow: 1;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 1em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.clossing-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+td{
+    padding: 5px 0;
+}
+
+td a{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.info-logo {
+    display:inline;
+}
+
+.info-logo img, .info-logo p{
+    float: left;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 10em;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    text-align: center;
+    font-size: 20px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+/* Media Query */
+@media screen and (max-width: 720px){
+    .medsos{
+        max-width: 350px;
+    }
+
+    .skills img{
+        max-width: 40%;
+        height: 100%;
+        margin: auto 0;
+    }    
+
+    article .flex-row{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    article .my-ability{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex: 30%;
+    }
+
+    .skills p{
+        text-align: center;
+        color: #231955;
+    }
+    
+    .tools{
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-card{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .showAchieve{
+        width: 80%;
+    }
+
+    .btn-prev, .btn-next{
+        font-size: 25px;
+    }
+
+    .caption{
+        font-size: 15px;
+    }
+
+    .dot-btn{
+        margin-top: 0;
+    }
+
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .clossing-img{
+        max-width: 40%;
+        max-height: 40%;
+        margin: 0 auto;
+    }
+
+    .about-me p{
+        font-size: 13px;
+    }
+
+    .clossing-info img{
+        max-width: 25px;
+    }
+
+    .clossing-info a{
+        font-size: 13px;
+    }
+
+    footer{
+        margin-top: 8em;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    nav img{
+        width: 50px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    .nav-bawah{
+        padding: 8px;
+    }
+
+    .nav-opsi{
+        width: 400px;
+    }
+
+    .nav-opsi li{
+        padding-right: 10px;
+    }
+    
+    article{
+        margin-top: 3em;
+    }
+
+    .profile{
+        padding: 20px 0;
+    }
+
+    .profile h1{
+        font-size: 22px;
+    }
+
+    .profile p{
+        font-size: 13px;
+    }
+
+    .introduce img{
+        width: 130px;
+    }
+
+    .medsos{
+        max-width: 300px;
+    }
+
+    .medsos img{
+        max-width: 30px;
+    }
+
+    h2{
+        font-size: 21px;
+    }
+
+    .skills h3{
+        font-size: 18px;
+    }
+
+    .skills h5{
+        font-size: 12px;
+    }
+
+    .tools p{
+        font-size: 8px;
+    }
+
+    .percentage-bar{
+        height: 8px;
+    }
+
+    .achievements{
+        padding: 12px;
+    }
+
+    .showAchieve{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    nav img{
+        width: 45px;
+    }
+
+    .nav-bawah{
+        padding: 5px;
+    }
+
+    .nav-opsi{
+        display: none;
+    }
+
+    .dropdown-nav{
+        display: block;
+        z-index: 1;
+    }
+
+    .dropdown-btn{
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .dropdown-btn img{
+        width: 30px;
+        height: 25px;
+    }
+
+    #dropdownOpsi{
+        display: none;
+        list-style-type: none;
+        margin-top: 10px;
+        margin-right: 40px;
+    }
+
+    #dropdownOpsi li{
+        margin: 5px;
+        text-align: center;
+    }
+
+    .profile{
+        padding: 15px 0;
+    }
+
+    .profile h1{
+        font-size: 18px;
+    }
+
+    .profile p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .introduce img{
+        width: 120px;
+    }
+
+    .medsos{
+        max-width: 250px;
+        margin: 10px auto;
+    }
+
+    .medsos img{
+        max-width: 22px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    .skills h3{
+        font-size: 14px;
+    }
+
+    .skills h5{
+        font-size: 10px;
+    }
+
+    .tools p{
+        font-size: 7px;
+    }
+
+    .percentage-bar{
+        height: 7px;
+    }
+
+    .showAchieve{
+        width: 100%;
+    }
+
+    .btn-prev, .btn-next{
+        font-size: 15px;
+    }
+
+    .caption{
+        font-size: 12px;
+    }
+
+    .dot-btn{
+        margin-top: 0;
+    }
+
+    .dot{
+        width: 9px;
+        height: 9px;
+        margin: 0 8px;
+    }
+
+    .clossing-img{
+        max-width: 60%;
+        max-height: 60%;
+        margin: 0 auto;
+    }
+
+    .about-me p{
+        font-size: 10px;
+    }
+
+    .clossing-info img{
+        max-width: 15px;
+    }
+
+    .clossing-info a{
+        font-size: 10px;
+    }
+
+    footer{
+        margin-top: 6em;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .medsos{
+        max-width: 200px;
+    }
+
+    .medsos img{
+        max-width: 16px;
+    }
+}
